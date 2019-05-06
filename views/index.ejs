@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Employee List</title>
+    </head>
+
+    <body>
+        <h2>The following is the list of Employees: </h2><hr>
+
+        <div>
+            <% employeeList.forEach(function(employee){ %>
+                <p>Employee Name: <strong><%= employee.name %></strong></p>
+                <p>Employee Age: <strong><%= employee.age %></strong></p>
+                <p>Employee Designation: <strong><%= employee.designation %></strong></p><hr>
+            <% })%>
+        </div>
+
+        
+
+    </body>
+</html>
